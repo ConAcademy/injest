@@ -52,7 +52,7 @@ brews:
   - homepage: https://github.com/conacademy/injest
     description: "CLI Joke Wrapper"
     folder: Formula
-    tap:
+    repository:
       owner: conacademy
       name: homebrew-tap
       branch: main

@@ -1,0 +1,30 @@
+version: '3'
+
+tasks:
+  tidy:
+    cmds:
+      - go mod tidy
+
+  build:
+    deps: [tidy]
+    cmds:
+      - go build -o injest cmd/injest/main.go
+    generates:
+      - injest
+    silent: false
+
+  clean:
+    cmds:
+      - rm injest
+
+  test:
+    cmds:
+      - echo no tests yet
+      #- go test neomantra/injest/pkg/injest
+    silent: false
+
+  default:
+    cmds:
+      - task: test
+      - task: build
+

@@ -1,0 +1,65 @@
+# .goreleaser.yml file
+# injest - another ConAcademy joint
+# Copyright (c) 2023 Neomantra BV
+# Documentation at http://goreleaser.com
+
+project_name: injest
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - main: cmd/injest/main.go
+    id: injest
+    binary: injest
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+
+archives:
+  - replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+
+checksum:
+  name_template: 'checksums.txt'
+
+snapshot:
+  name_template: "{{ incpatch .Version }}-next"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+
+universal_binaries:
+  - replace: true
+
+release:
+  github:
+    owner: neomantra
+    name: injest
+
+brews:
+  - homepage: https://github.com/conacademy/injest
+    description: "CLI Joke Wrapper"
+    folder: Formula
+    tap:
+      owner: conacademy
+      name: homebrew-tap
+      branch: main
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    commit_author:
+      name: goreleaserbot
+      email: goreleaserbot@neomantra.net
+    install: |
+      bin.install "injest"

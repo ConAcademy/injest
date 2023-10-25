@@ -2,7 +2,7 @@
 
 [![golangci-lint](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yml)
 [![CodeQL](https://github.com/conacademy/injest/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/codeql-analysis.yml)
-[![Go ReportCard](https://goreportcard.com/badge/conacademy/injest)](http://goreportcard.com/report/conacademy/injest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/conacademy/injest)](https://goreportcard.com/report/github.com/conacademy/injest)
 
 `injest` wraps input into a joke and emits it to `stdout`.
 
@@ -55,8 +55,16 @@ task: [build] go build -o injest cmd/injest/main.go
 
 ----
 
+## Contribution and Conduct
+
+As with all ConAcademy projects, pull requests are welcome.  Or fork it.  You do you.
+
+Either way, obey our [Code of Conduct](./CODE_OF_CONDUCT.md).  Be shady, but don't be a jerk.
+
+----
+
 ## Credits and License
 
-Copyright (c) 2022-2023 Neomantra BV.  Authored by Evan Wies for [ConAcademy](https://github.com/conacademy).
+Copyright (c) 2023 Neomantra BV.  Authored by Evan Wies for [ConAcademy](https://github.com/conacademy).
 
 Released under the [MIT License](https://en.wikipedia.org/wiki/MIT_License), see [LICENSE.txt](./LICENSE.txt).

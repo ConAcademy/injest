@@ -18,7 +18,7 @@ You can also install for various platforms with [Homebrew](https://brew.sh) from
 
 ```
 brew tap conacademy/homebrew-tap
-brew install injest
+brew install conacademy/tap/injest
 ```
 
 ----
@@ -30,7 +30,7 @@ brew install injest
 yomamma
 knock
 
-> dig +short pi.neomantra.com | injest -j knock
+> dig +short pi.neomantra.com | injest --stdin -j knock
 Knock knock
 Who's there?
 Your data.

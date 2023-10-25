@@ -12,8 +12,6 @@ import (
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-var usageFormatShort string = `usage:  %s <options> [input]`
-
 var usageFormat string = `usage:  %s <options> [input]
 
 "injest" wraps input into a joke and emits it to stdout.
@@ -47,7 +45,7 @@ func main() {
 	}
 
 	if listKinds {
-		for kind, _ := range allTheJesters {
+		for kind := range allTheJesters {
 			fmt.Fprintf(os.Stdout, "%s\n", kind)
 		}
 		os.Exit(0)

@@ -1,4 +1,4 @@
-# injest -- wraps your stdin in jokes
+# injest -- wraps your input in jokes
 
 `injest` wraps input into a joke and emits it to `stdout`.
 

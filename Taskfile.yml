@@ -20,7 +20,7 @@ tasks:
   test:
     cmds:
       - echo no tests yet
-      #- go test neomantra/injest/pkg/injest
+      #- go test conacademy/injest/pkg/injest
     silent: false
 
   default:

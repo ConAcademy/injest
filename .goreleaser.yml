@@ -45,7 +45,7 @@ universal_binaries:
 
 release:
   github:
-    owner: neomantra
+    owner: conacademy
     name: injest
 
 brews:

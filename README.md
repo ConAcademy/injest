@@ -6,7 +6,7 @@
 
 `injest` wraps input into a joke and emits it to `stdout`.
 
-Origin Story.... I do amateur nerd-code freestyle and used a double-entendre of "in jest" and "ingest" in a rhyme (no memory of the whole phrasing, that's how it goes).   I thought that was really funny, and [ConAcademy](https://github.conacademy) needed some real code, so here we are.
+Origin Story.... I do amateur nerd-code freestyle and used a double-entendre of "in jest" and "ingest" in a rhyme (no memory of the whole phrasing, that's how it goes).   I thought that was really funny, and [ConAcademy](https://github.com/conacademy) needed some real code, so here we are.
 
 ----
 

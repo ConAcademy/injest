@@ -1,6 +1,6 @@
 # injest -- wraps your input in jokes
 
-[![golangci-lint](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yaml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yaml)
+[![golangci-lint](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yml)
 [![CodeQL](https://github.com/conacademy/injest/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/codeql-analysis.yml)
 [![Go ReportCard](https://goreportcard.com/badge/conacademy/injest)](http://goreportcard.com/report/conacademy/injest)
 

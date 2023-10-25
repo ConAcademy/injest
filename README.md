@@ -1,5 +1,9 @@
 # injest -- wraps your input in jokes
 
+[![golangci-lint](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yaml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/golangci-lint.yaml)
+[![CodeQL](https://github.com/conacademy/injest/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/conacademy/injest/actions/workflows/codeql-analysis.yml)
+[![Go ReportCard](https://goreportcard.com/badge/conacademy/injest)](http://goreportcard.com/report/conacademy/injest)
+
 `injest` wraps input into a joke and emits it to `stdout`.
 
 Origin Story.... I do amateur nerd-code freestyle and used a double-entendre of "in jest" and "ingest" in a rhyme (no memory of the whole phrasing, that's how it goes).   I thought that was really funny, and [ConAcademy](https://github.conacademy) needed some real code, so here we are.

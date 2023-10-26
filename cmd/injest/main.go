@@ -24,6 +24,8 @@ var allTheJesters = map[string]jester.Jester{
 	"knock":   jester.KnockKnockJester{},
 	"yomamma": jester.YoMammaJester{},
 	"racist":  jester.RacistJester{},
+	"office":  jester.OfficeJester{},
+	"twss":    jester.OfficeJester{},
 }
 
 // ///////////////////////////////////////////////////////////////////////////////////

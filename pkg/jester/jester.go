@@ -51,3 +51,16 @@ func (j RacistJester) MakeJoke(input string) string {
 	sb.WriteString("https://github.com/ConAcademy/injest/blob/main/CODE_OF_CONDUCT.md\n")
 	return sb.String()
 }
+
+////////////////////////////////////////////////////////////////////////////
+
+type OfficeJester struct {
+}
+
+func (j OfficeJester) MakeJoke(input string) string {
+	// Thanks for all the laughs, Office Team!
+	var sb strings.Builder
+	sb.WriteString(input)
+	sb.WriteString("\n  ... that's what she said!\n")
+	return sb.String()
+}

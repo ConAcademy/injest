@@ -39,3 +39,15 @@ func (j YoMammaJoke) MakeJoke(input string) string {
 	sb.WriteString(input)
 	return sb.String()
 }
+
+////////////////////////////////////////////////////////////////////////////
+
+type RacistJoke struct {
+}
+
+func (j RacistJoke) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("Enlighten yourself and read the CODE OF CONDUCT.  Users should be nice too.\n")
+	sb.WriteString("https://github.com/ConAcademy/injest/blob/main/CODE_OF_CONDUCT.md\n")
+	return sb.String()
+}

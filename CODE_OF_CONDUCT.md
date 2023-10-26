@@ -3,7 +3,6 @@
 The following Code of Conduct applies to all digital spaces managed by the ConAcademy participants, including GitHub, mailing lists, and any other spaces which the development community uses for communication.
 
 ---
-body:
 
 ## Our Pledge
 

@@ -14,10 +14,10 @@ type Jester interface {
 
 ////////////////////////////////////////////////////////////////////////////
 
-type KnockKnockJoke struct {
+type KnockKnockJester struct {
 }
 
-func (j KnockKnockJoke) MakeJoke(input string) string {
+func (j KnockKnockJester) MakeJoke(input string) string {
 	var sb strings.Builder
 	sb.WriteString("Knock knock\n")
 	sb.WriteString("Who's there?\n")
@@ -30,10 +30,10 @@ func (j KnockKnockJoke) MakeJoke(input string) string {
 
 ////////////////////////////////////////////////////////////////////////////
 
-type YoMammaJoke struct {
+type YoMammaJester struct {
 }
 
-func (j YoMammaJoke) MakeJoke(input string) string {
+func (j YoMammaJester) MakeJoke(input string) string {
 	var sb strings.Builder
 	sb.WriteString("Yo momma so fat that ") // HAHA Copilot: when she sat on a binary tree she flattened it to a linked list.\n")
 	sb.WriteString(input)
@@ -42,10 +42,10 @@ func (j YoMammaJoke) MakeJoke(input string) string {
 
 ////////////////////////////////////////////////////////////////////////////
 
-type RacistJoke struct {
+type RacistJester struct {
 }
 
-func (j RacistJoke) MakeJoke(input string) string {
+func (j RacistJester) MakeJoke(input string) string {
 	var sb strings.Builder
 	sb.WriteString("Enlighten yourself and read the CODE OF CONDUCT.  Users should be nice too.\n")
 	sb.WriteString("https://github.com/ConAcademy/injest/blob/main/CODE_OF_CONDUCT.md\n")

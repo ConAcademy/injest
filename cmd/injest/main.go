@@ -21,9 +21,9 @@ var usageFormat string = `usage:  %s <options> [input]
 /////////////////////////////////////////////////////////////////////////////////////
 
 var allTheJesters = map[string]jester.Jester{
-	"knock":   jester.KnockKnockJoke{},
-	"yomamma": jester.YoMammaJoke{},
-	"racist":  jester.RacistJoke{},
+	"knock":   jester.KnockKnockJester{},
+	"yomamma": jester.YoMammaJester{},
+	"racist":  jester.RacistJester{},
 }
 
 // ///////////////////////////////////////////////////////////////////////////////////

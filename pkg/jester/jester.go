@@ -200,3 +200,17 @@ func (j DemonSlayerJester) MakeJoke(input string) string {
 	sb.WriteString(" stays cool and focused — Water Breathing, First Form: Family Friendly!\n")
 	return sb.String()
 }
+
+////////////////////////////////////////////////////////////////////////////
+
+type PokemonJester struct {
+}
+
+func (j PokemonJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("\u2605 A wild ")
+	sb.WriteString(input)
+	sb.WriteString(" appeared!\n")
+	sb.WriteString("\u2514\u2500 But it just wants to share snacks and friendship.\n")
+	return sb.String()
+}

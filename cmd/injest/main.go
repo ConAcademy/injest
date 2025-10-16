@@ -35,6 +35,7 @@ var allTheJesters = map[string]jester.Jester{
 	"isekai": jester.IsekaiJester{},
 	"naruto": jester.NarutoJester{},
 	"demonslayer": jester.DemonSlayerJester{},
+	"pokemon": jester.PokemonJester{},
 }
 
 // ///////////////////////////////////////////////////////////////////////////////////

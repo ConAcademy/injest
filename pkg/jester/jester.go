@@ -113,12 +113,22 @@ func (j CrossroadJester) MakeJoke(input string) string {
 type WhatDoYouCallJester struct {
 }
 
-// Formulaic joke experiment: "What do you call <thing>?" naming gag
+// Formulaic joke experiment: "What do you call <thing>?" naming gag with a few clean punchlines
 func (j WhatDoYouCallJester) MakeJoke(input string) string {
 	var sb strings.Builder
 	sb.WriteString("What do you call ")
 	sb.WriteString(input)
 	sb.WriteString("?\n")
-	sb.WriteString("A good one!\n")
+	// Minor dynamicism: rotate among a few wholesome punchlines based on input length
+	switch len(strings.TrimSpace(input)) % 4 {
+	case 0:
+		sb.WriteString("A classic!\n")
+	case 1:
+		sb.WriteString("A real gem!\n")
+	case 2:
+		sb.WriteString("A good one!\n")
+	default:
+		sb.WriteString("A keeper!\n")
+	}
 	return sb.String()
 }

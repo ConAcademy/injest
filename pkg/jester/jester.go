@@ -18,6 +18,7 @@ type KnockKnockJester struct {
 }
 
 func (j KnockKnockJester) MakeJoke(input string) string {
+	// Formulaic joke experiment: classic knock-knock structure with <A> and <B>
 	var sb strings.Builder
 	sb.WriteString("Knock knock\n")
 	sb.WriteString("Who's there?\n")
@@ -69,6 +70,7 @@ func (j OfficeJester) MakeJoke(input string) string {
 type DadJester struct {
 }
 
+// Formulaic joke experiment: subject-driven dad joke one-liner
 func (j DadJester) MakeJoke(input string) string {
 	var sb strings.Builder
 	sb.WriteString("I would tell you a joke about ")
@@ -82,10 +84,41 @@ func (j DadJester) MakeJoke(input string) string {
 type RiddleJester struct {
 }
 
+// Formulaic joke experiment: simple riddle-style prompt and punchline
 func (j RiddleJester) MakeJoke(input string) string {
 	var sb strings.Builder
 	sb.WriteString("Riddle me this: When is ")
 	sb.WriteString(input)
 	sb.WriteString(" like a door? When it's a-jar!\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type CrossroadJester struct {
+}
+
+// Formulaic joke experiment: classic "Why did the <subject> cross the road?"
+func (j CrossroadJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("Why did the ")
+	sb.WriteString(input)
+	sb.WriteString(" cross the road?\n")
+	sb.WriteString("To get to the other side!\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type WhatDoYouCallJester struct {
+}
+
+// Formulaic joke experiment: "What do you call <thing>?" naming gag
+func (j WhatDoYouCallJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("What do you call ")
+	sb.WriteString(input)
+	sb.WriteString("?\n")
+	sb.WriteString("A good one!\n")
 	return sb.String()
 }

@@ -28,6 +28,8 @@ var allTheJesters = map[string]jester.Jester{
 	"twss":    jester.OfficeJester{},
 	"dad":     jester.DadJester{},
 	"riddle":  jester.RiddleJester{},
+	"crossroad": jester.CrossroadJester{},
+	"whatdoyoucall": jester.WhatDoYouCallJester{},
 }
 
 // ///////////////////////////////////////////////////////////////////////////////////

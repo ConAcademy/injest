@@ -30,6 +30,11 @@ var allTheJesters = map[string]jester.Jester{
 	"riddle":  jester.RiddleJester{},
 	"crossroad": jester.CrossroadJester{},
 	"whatdoyoucall": jester.WhatDoYouCallJester{},
+	"senpai": jester.SenpaiJester{},
+	"powerlevel": jester.PowerLevelJester{},
+	"isekai": jester.IsekaiJester{},
+	"naruto": jester.NarutoJester{},
+	"demonslayer": jester.DemonSlayerJester{},
 }
 
 // ///////////////////////////////////////////////////////////////////////////////////

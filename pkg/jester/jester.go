@@ -132,3 +132,71 @@ func (j WhatDoYouCallJester) MakeJoke(input string) string {
 	}
 	return sb.String()
 }
+
+////////////////////////////////////////////////////////////////////////////
+
+type SenpaiJester struct {
+}
+
+func (j SenpaiJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("Senpai noticed ")
+	sb.WriteString(input)
+	sb.WriteString("!\n")
+	sb.WriteString("Just kidding — senpai notices everyone who trains that hard.\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type PowerLevelJester struct {
+}
+
+func (j PowerLevelJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("What's ")
+	sb.WriteString(input)
+	sb.WriteString("'s power level?\n")
+	sb.WriteString("It's over nine thousand! But only on weekends.\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type IsekaiJester struct {
+}
+
+func (j IsekaiJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("If ")
+	sb.WriteString(input)
+	sb.WriteString(" got isekai'd, what class would they pick?\n")
+	sb.WriteString("Support. Because real heroes carry the party.\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type NarutoJester struct {
+}
+
+func (j NarutoJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("Believe it! If ")
+	sb.WriteString(input)
+	sb.WriteString(" trained with Kakashi, they'd master teamwork before shadow clones.\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type DemonSlayerJester struct {
+}
+
+func (j DemonSlayerJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("Like Tanjiro's breath, ")
+	sb.WriteString(input)
+	sb.WriteString(" stays cool and focused — Water Breathing, First Form: Family Friendly!\n")
+	return sb.String()
+}

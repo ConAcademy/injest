@@ -58,9 +58,34 @@ type OfficeJester struct {
 }
 
 func (j OfficeJester) MakeJoke(input string) string {
-	// Thanks for all the laughs, Office Team!
 	var sb strings.Builder
 	sb.WriteString(input)
 	sb.WriteString("\n  ... that's what she said!\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type DadJester struct {
+}
+
+func (j DadJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("I would tell you a joke about ")
+	sb.WriteString(input)
+	sb.WriteString(", but it's too cheesy.\n")
+	return sb.String()
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+type RiddleJester struct {
+}
+
+func (j RiddleJester) MakeJoke(input string) string {
+	var sb strings.Builder
+	sb.WriteString("Riddle me this: When is ")
+	sb.WriteString(input)
+	sb.WriteString(" like a door? When it's a-jar!\n")
 	return sb.String()
 }

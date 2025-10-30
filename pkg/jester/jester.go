@@ -24,7 +24,9 @@ func (j KnockKnockJester) MakeJoke(input string) string {
 	sb.WriteString("Who's there?\n")
 	sb.WriteString("Your data.\n")
 	sb.WriteString("Your data, who?\n")
-	sb.WriteString("Your data is not a joke:\n") // CoPilot came up with that so it stays
+	sb.WriteString("Your data ")
+	sb.WriteString(input)
+	sb.WriteString("\nYour data is not a joke: ")
 	sb.WriteString(input)
 	return sb.String()
 }
